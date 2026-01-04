@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SSBCA College</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* HEADER */
+        header {
+            text-align: center;
+            color: white;
+            padding: 0;
+            height: 890px;
+            width: 100%;
+            background-size:contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        header h1 {
+            margin: 0;
+            padding-top: 65px;
+            font-size: 45px;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        /* BODY */
+        body {
+            background-color: #beebfb;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background-color: #0f5ca4;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        /* WELCOME BOX */
+        .wlc {
+            text-align: center;
+            font-size: 22px;
+            padding: 25px;
+            font-weight: bold;
+            font-family: cursive;
+        }
+
+        /* BUTTON */
+        .button {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 22px;
+            background-color: #1c7dbd;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background-color: #06064d;
+        }
+
+        /* INTRO SECTION */
+        section.intru {
+            padding: 20px;
+            text-align: justify;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            background-color: #0f5ca4;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="header">
+        <h1>SSBCA COLLEGE</h1>
+    </header>
+
+    <nav>
+        <a href="indexhome.html">Home</a>
+        <a href="Faculty11.html">Faculty</a>
+        <a href="note.html">Notes</a>
+        <a href="Contact.html">Contact</a>
+        <a href="queries.html">Queries</a>
+    </nav>
+
+    <div class="wlc">
+        Welcome to Our College
+        <br>
+        <button class="button">Learn More</button>
+    </div>
+
+    <section class="intru">
+        <h2>Introduction</h2>
+        <p>
+            Welcome to SSBCA College, where we believe in excellence and education.
+            Our college provides quality education and a platform for students to grow academically and personally.
+        </p>
+
+        <p>
+            Explore our departments, meet our dedicated faculty, and discover opportunities that will shape your future.
+        </p>
+    </section>
+
+    <footer>
+        &copy; 2025 SSBCA College. All Rights Reserved.
+    </footer>
+
+    <!-- IMAGE SLIDER -->
+    <script>
+        const imgs = ["clg.png", "clg3.png", "clg4.png", "clg5.png"];
+        let i = 0;
+
+        setInterval(() => {
+            document.getElementById("header").style.backgroundImage = "url(" + imgs[i] + ")";
+            i = (i + 1) % imgs.length;
+        }, 3000);
+    </script>
+
+</body>
+
+</html>

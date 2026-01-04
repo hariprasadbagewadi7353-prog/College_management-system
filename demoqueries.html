@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes & Queries</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #2a4d69;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    /* Query Form */
+    .query-form {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 7px 9px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 30px;
+    }
+
+    .query-form h2 {
+      text-align: center;
+      color: #2a4d69;
+    }
+
+    .query-form input, 
+    .query-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+
+    .query-form button {
+      background-color: #2a4d69;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+      transition: 0.3s;
+    }
+
+    .query-form button:hover {
+      background-color: #4b86b4;
+    }
+
+    /* Contact Info */
+    .contact-info {
+      background-color: #2a4d69;
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+
+    .contact-info p {
+      margin: 6px 0;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Notes & Queries</h1>
+  </header>
+
+  <section class="notes-section">
+    <h2>📚 Download Study Notes</h2>
+    <div class="note-card">
+      <h3>Library Management System - Overview</h3>
+      <p>A complete overview of library management concepts, entities, and workflows.</p>
+      <a href="notes/LMS_Overview.pdf" download>📥 Download Notes</a>
+    </div>
+
+    <div class="note-card">
+      <h3>Database Management Notes</h3>
+      <p>DBMS fundamentals, normalization, SQL queries, and relational model summary.</p>
+      <a href="notes/DBMS_Notes.pdf" download>📥 Download Notes</a>
+    </div>
+
+    <div class="note-card">
+      <h3>Web Development Basics</h3>
+      <p>HTML, CSS, JavaScript basics to build your first web project.</p>
+      <a href="notes/Web_Dev_Basics.pdf" download>📥 Download Notes</a>
+    </div>
+  </section>
+
+  <section class="query-form">
+    <h2>💬 Have a Question?</h2>
+    <form id="queryForm" action="#" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Type your query or feedback here..." required></textarea>
+      <button type="submit">Submit Query</button>
+    </form>
+  </section>
+
+  <footer class="contact-info">
+    <h3>📞 Contact Us</h3>
+    <p>Email: librarysupport@college.edu</p>
+    <p>Phone: +91 98765 43210</p>
+    <p>Address: Library Block, College Campus, Bengaluru</p>
+  </footer>
+
+  <script>
+    // Simple form submission alert
+    document.getElementById("queryForm").addEventListener("submit", function(event){
+      event.preventDefault();
+      alert("✅ Your query has been submitted successfully! We'll get back to you soon.");
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
